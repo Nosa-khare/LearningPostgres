@@ -33,3 +33,31 @@ CREATE TABLE person (
  gender VARCHAR(7),
  date_of_birth DATE NOT NULL,
  email VARCHAR(150) );
+
+
+----------------------------------------------
+⌨️ Inserting records into tables
+
+
+INSERT INTO person (
+ 	first_name,
+ 	last_name,
+ 	gender,
+ 	date_of_birth)
+VALUES ('Anne', 'Smith', 'FEMALE', DATE '1998-01-09');
+
+INSERT INTO person (
+ 	first_name,
+ 	last_name,
+ 	gender,
+ 	date_of_birth)
+VALUES ('Jake', 'Jones', 'MALE', DATE '1991-01-10', 'jake@gmail.com');
+
+**P.S: We do not have to specify the record's id, since the data type is SERIAL. It auto increments as records are being added.
+
+
+----------------------------------------------
+
+www.mockaroo.com --Generate random data
+
+-----------------------------------------------
