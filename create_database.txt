@@ -1,0 +1,35 @@
+CREATE USER user WITH PASSWORD '****'; --create  a user
+CREATE DATABASE **** WITH OWNER 'user'; --create a database for a user
+
+
+----------------------------------------------
+⌨️ Creating tables without constraints
+
+
+CREATE TABLE table_name (
+	Column name + data type + constraints(if any)
+)
+
+e.g
+
+CREATE TABLE person (
+	id INT,
+	first_name VARCHAR(50),
+	last_name VARCHAR(50),
+	gender VARCHAR(6),
+	date_of_birth DATE )
+
+'\d' for table list
+'\d + table_name' for table description (shema) 
+
+
+---------------------------------------------------
+⌨️ creating tables with constraints
+
+CREATE TABLE person (
+ id BIGSERIAL NOT NULL PRIMARY KEY,
+ first_name VARCHAR(50) NOT NULL,
+ last_name VARCHAR(50) NOT NULL,
+ gender VARCHAR(7),
+ date_of_birth DATE NOT NULL,
+ email VARCHAR(150) );
