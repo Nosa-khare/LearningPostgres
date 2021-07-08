@@ -1,4 +1,4 @@
-⌨️ SELECT 
+-- ⌨️ SELECT 
 
 SELECT * FROM person; --selects all columns from person
 
@@ -10,19 +10,19 @@ SELECT CONCAT (first_name, ' ', last_name) AS fullname, email, country FROM pers
 
 
 ----------------------------------------------
-⌨️ Order By
+-- ⌨️ Order By
 
 SELECT * FROM person ORDER BY country DESC OFFSET(354) LIMIT(8); --select first 8 records from person table in descending order of 'country' column starting from the 354th value (up to the next 362nd value)
 
 
 -----------------------------------------------
-⌨️ Distinct
+-- ⌨️ Distinct
 
 SELECT DISTINCT column FROM table ORDER BY column --selects unique values represented in the column (no duplicates)
 
 
 ------------------------------------------------
-⌨️ Where Clause and AND ( sort of conditional statement)
+-- ⌨️ Where Clause and AND ( sort of conditional statements)
 
 SELECT * FROM person WHERE gender = 'MALE' --selcts all records of MALE gender
 
