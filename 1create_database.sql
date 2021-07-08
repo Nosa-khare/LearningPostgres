@@ -3,14 +3,14 @@ CREATE DATABASE **** WITH OWNER 'user'; --create a database for a user
 
 
 ----------------------------------------------
-⌨️ Creating tables without constraints
+--⌨️ Creating tables without constraints
 
 
-CREATE TABLE table_name (
-	Column name + data type + constraints(if any)
-)
+-- CREATE TABLE table_name (
+-- 	Column name + data type + constraints(if any)
+-- )
 
-e.g
+-- e.g
 
 CREATE TABLE person (
 	id INT,
@@ -19,12 +19,12 @@ CREATE TABLE person (
 	gender VARCHAR(6),
 	date_of_birth DATE )
 
-'\d' for table list
-'\d + table_name' for table description (shema) 
+-- '\d' for table list
+-- '\d + table_name' for table description (shema) 
 
 
 ---------------------------------------------------
-⌨️ creating tables with constraints
+-- ⌨️ creating tables with constraints
 
 CREATE TABLE person (
  id BIGSERIAL NOT NULL PRIMARY KEY,
@@ -36,7 +36,7 @@ CREATE TABLE person (
 
 
 ----------------------------------------------
-⌨️ Inserting records into tables
+-- ⌨️ Inserting records into tables
 
 
 INSERT INTO person (
@@ -53,11 +53,11 @@ INSERT INTO person (
  	date_of_birth)
 VALUES ('Jake', 'Jones', 'MALE', DATE '1991-01-10', 'jake@gmail.com');
 
-**P.S: We do not have to specify the record's id, since the data type is SERIAL. It auto increments as records are being added.
+-- **P.S: We do not have to specify the record's id, since the data type is SERIAL. It auto increments as records are being added.
 
 
 ----------------------------------------------
 
-www.mockaroo.com --Generate random data
+-- visit "www.mockaroo.com" to Generate random data
 
 -----------------------------------------------
