@@ -17,4 +17,5 @@ SELECT substr(content, 2, 4) FROM  funtext WHERE content LIKE '%150000%'; --retu
 
 SELECT translate(content, 'th.p/', 'TH!P_') FROM  funtext WHERE content LIKE '%150000%'; --swaps character of first string with corresponding(matching position) 
                                                                                         --character in second string into content.
-                                                                                        --both strings must have same number of character
+                                                                                        --both strings must have same number of character.
+
