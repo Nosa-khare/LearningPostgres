@@ -25,4 +25,4 @@ explain analyze SELECT content FROM funtext
 explain analyze SELECT content FROM funtext 
   WHERE content IN (SELECT content FROM funtext WHERE content LIKE '%150000%');
 --this would be an index scan all through.
---the inner query being a prefix look up and outer query exact match look ups.
+--the inner query being a prefix look up and outer query an exact match look ups.
