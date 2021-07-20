@@ -16,12 +16,12 @@ INSERT INTO em (email)
 
 CREATE TABLE twitter (
   id SERIAL,
-  PRIMARY KEY(id)
+  PRIMARY KEY(id),
   tweet TEXT
 );
 
 INSERT INTO twitter (tweet)
   VALUES ('This is #SQL and its #FUN'),
-  ('Everyone should learn #SQL, the time is #NOW'),
-  ("You'd do well to also learn #PYTHON" )
+  ('Everyone should #learn #SQL, the time is #NOW'),
+  ('You''d do well to also #learn #PYTHON' );
   
